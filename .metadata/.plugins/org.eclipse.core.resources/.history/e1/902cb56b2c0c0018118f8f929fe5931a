@@ -1,0 +1,19 @@
+package test_package;
+
+import java.util.HashMap;
+
+public class HashMap {
+	public static void main(String[] args) {
+		
+		 HashMap<String,String> Map = new HashMap<String,String>();
+		 Map.put("Firstname","Karthik");
+		 Map.put("Lastname","KR");
+		 Map.put("Location","Bangalore");
+		 System.out.println(Map);
+		 
+		 
+		
+		
+	}
+
+}

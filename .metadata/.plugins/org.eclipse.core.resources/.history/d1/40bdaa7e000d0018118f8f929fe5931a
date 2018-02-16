@@ -1,0 +1,22 @@
+package test_package;
+
+public class Exception_Handling_Class1 {
+	public static void main(String[] args) {
+		
+		int i;
+		System.out.println("Program Starts");
+		try{
+			System.out.println("try block starts");
+			
+		}
+		catch(){
+			
+			}
+		
+		finally{
+			
+		}
+		
+		
+	}}
+	

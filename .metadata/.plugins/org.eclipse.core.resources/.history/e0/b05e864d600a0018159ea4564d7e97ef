@@ -1,0 +1,48 @@
+package test_package;
+
+import org.omg.Messaging.SyncScopeHelper;
+
+
+interface Demo1{
+	static int i =20;
+	abstract void test1();
+	 
+}
+
+class F implements Demo1{
+	
+	public void test1(){
+		System.out.println("test1() from class F");
+	}
+	void test2(){
+		System.out.println("test2() from Class F");
+		System.out.println(i);
+	}
+	
+	
+}	
+
+public class Interface_Class1 {
+	public static void main(String[] args) {
+		System.out.println("Program Starts");
+		F obj1 = new F();
+		obj1.test1();
+		obj1.test2();
+		System.out.println(Demo1.i);//Static Members can be accessed by Interface Name
+		System.out.println(F.i);
+		System.out.println(obj1.i);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+//interface contains abstract Methods Only

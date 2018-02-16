@@ -1,0 +1,29 @@
+package test_package;
+
+// 1 Dimensional Array
+public class Array_Class2 {
+	public static void main(String[] args) {
+		String username="xyz";
+		String password ="abc";
+		String ibm[] = new String[3];
+		int no[] = new int[2];
+		ibm[0] = username;
+		ibm[1] = password;
+		ibm[2] = "abcd";
+		no[0]=10;
+		
+		
+		System.out.println(ibm.length);
+		for (int i =0;i<ibm.length;i++)
+		{
+			System.out.println(ibm[i]);
+		}
+		for (int j =0;j<no.length;j++)
+		{
+			System.out.println(no[j]);
+		}
+	}
+
+}
+// by default String value is null
+

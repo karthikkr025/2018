@@ -1,0 +1,43 @@
+package test_package;
+
+public class Exception_Handling_Class1 {
+	public static void main(String[] args) {
+		
+		int i;
+		System.out.println("Program Starts");
+		try{
+			System.out.println("try block starts");
+			i=10/10;
+			System.out.println("try Block Executes");
+			
+			
+		}
+		catch(ArithmeticException exp){
+			System.out.println("Catch block starts");
+			
+			}
+		catch (NumberFormatException exp) {
+			System.out.println("NumberFormatException block starts");
+			
+		}
+		catch (NullPointerException exp) {
+			System.out.println("NullPointerException block starts");
+			
+		}
+		catch (Exception e) {
+			System.out.println("Exception block starts");
+			
+		}
+		
+		finally{
+			System.out.println("Finally block starts");
+			
+		}
+		
+		System.out.println("Program Ends");
+		
+		
+	}}
+
+//If No Error in try block 
+	

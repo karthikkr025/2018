@@ -1,0 +1,33 @@
+package test_package;
+
+interface Demo2{
+	static int i =10;
+	abstract void test1();
+	void test2();
+}
+
+abstract class G implements Demo2{
+	public void test1(){
+		System.out.println("test1() from class G");
+	}
+}
+
+class H extends G{
+	public void test2(){
+		System.out.println("test2() from class H");
+		}
+}
+
+public class Interface_Class2 {
+	public static void main(String[] args) {
+		System.out.println("Program Starts");
+		H obj1 = new H();
+		obj1.test1(); 
+		obj1.test2();  
+		System.out.println(obj1.i);
+		System.out.println(Demo2.i);
+		System.out.println("Program Ends");
+		
+	}
+
+}

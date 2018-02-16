@@ -1,0 +1,23 @@
+package samplePrograms;
+
+public class All_Class {
+	
+	static int sv =10;
+	int nsv = 20;
+	
+	
+	public static void main(String[] args) {
+		
+	int lv  =30;
+	
+	System.out.println("static variable access by name ="+sv);
+	System.out.println("static variable access by classname "+All_Class.sv);
+	
+	All_Class obj1 = new All_Class();
+    System.out.println("Non static variable access by object ="+obj1.nsv);
+    
+	System.out.println("Local variable access by name ="+lv);	
+
+	}
+
+}

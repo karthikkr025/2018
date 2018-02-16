@@ -1,0 +1,29 @@
+package test_package;
+
+interface X{
+	void test1();
+}
+
+interface Y extends X{
+	void test2();
+}
+
+class K implements Y{
+	public void test1(){
+		System.out.println("test1 implemented in Class K");
+	}
+	public void test2(){
+		System.out.println("test2 implemented in class K");
+	}
+}
+
+public class Interface_Class3 {
+	public static void main(String[] args) {
+		System.out.println("Program starts");
+		K obj1 = new K();
+		obj1.test1();
+		obj1.test2();
+		System.out.println("Program Ends");
+	}
+
+}

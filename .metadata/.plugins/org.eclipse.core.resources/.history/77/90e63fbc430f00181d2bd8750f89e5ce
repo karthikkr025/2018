@@ -1,0 +1,17 @@
+package samplePrograms;
+
+public class All_Class {
+	
+	static int sv =10;
+	int nsv = 20;
+	
+	
+	public static void main(String[] args) {
+		
+	int lv  =30;
+	
+	System.out.println("static variable ="+sv);
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package test_package;
+
+import java.io.File;
+import java.io.IOException;
+
+public class File_Read_Write {
+	
+	public static void main(String[] args) throws IOException {
+		
+		File f = new File("C:\\Sample.txt");
+		f.createNewFile();
+		System.out.println("File created");
+	}
+
+}

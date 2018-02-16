@@ -1,0 +1,21 @@
+package test_package;
+
+import java.util.Hashtable;
+
+public class HashTable_Class1 {
+	
+	public static void main(String[] args) {
+		
+		Hashtable<String,String> table1 = new Hashtable<String,String>();
+		table1.put("city1","Bangalore");
+		table1.put("city2","Dehli");
+		table1.put("city3","Mumbai");
+		System.out.println(table1.get("city1"));
+		
+		Hashtable<String,String> table2 = new Hashtable<String,String>();
+		table1.put("city1","Chennai");
+		table1.put("city2","Pune");
+		table1.put("city3","Thailand");
+		
+	}
+}

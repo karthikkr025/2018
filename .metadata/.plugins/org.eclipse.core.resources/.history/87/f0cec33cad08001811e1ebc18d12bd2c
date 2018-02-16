@@ -1,0 +1,46 @@
+package test_package;
+class C1{
+	C1(){
+//      super();		
+		System.out.println("Run Default Constructor of C1");
+	}
+	C1(int b){
+		System.out.println("Run int Constructor of C1");
+	}
+}
+
+class D1 extends C1{
+	D1(){
+		System.out.println("Run Default Constructor of D1");
+	}
+	//Arg constructor will not be called defaultly
+	D1(int a){
+//      super(20)		
+		System.out.println("Run int Constructor of D1");
+	}
+	D1(double a){
+		super(20);
+		System.out.println("Run Double Constructor of D1");
+	}
+}
+
+class E1 extends D1{
+	E1(){
+//      super(10);		
+		System.out.println("Run Default Constructor of E1");	
+	}
+	E1(int b){
+		super(10.50);
+		System.out.println("Run int Constructor of E1");
+	}
+}
+
+public class Super_Keyword_Class2 {
+   public static void main(String[] args) {
+	   System.out.println("Program Starts");
+	   E1 obj1 = new E1(30);
+	   E1 obj2 = new E1();
+	   System.out.println("Program Ends");
+	
+}
+}

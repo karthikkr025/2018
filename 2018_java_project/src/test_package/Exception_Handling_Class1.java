@@ -1,0 +1,72 @@
+package test_package;
+
+public class Exception_Handling_Class1 {
+	public static void main(String[] args) {
+		
+		int i;
+		System.out.println("Program Starts");
+		try{
+			System.out.println("try block1 starts");
+			i=10/10;
+			System.out.println("i= "+i);
+			System.out.println("try Block1j Executes");
+		try{
+			System.out.println("try block2 starts");
+			i=10/10;
+			System.out.println("i= "+i);
+			System.out.println("try Block2 Executes");
+		try{
+			System.out.println("try block3 starts");
+			int j =Integer.parseInt("ten");
+			j=i/10;
+			System.out.println("i= "+j);
+			System.out.println("try Block3 Executes");
+		}
+		finally{
+			System.out.println("Finally block3 starts");
+		}
+		}
+		finally{
+			System.out.println("Finally block2 starts");
+			
+		}
+		}
+		catch(ArithmeticException exp){
+			System.out.println("Airthmetic Exception block starts");
+			System.out.println(exp);
+			
+			}
+		catch(NullPointerException exp) {
+			System.out.println("NullPointerException block starts");
+			
+		}
+		
+		catch(Exception e) {
+			System.out.println("Exception block starts");
+			System.out.println(e);
+			e.printStackTrace();
+			
+		}
+		
+		finally{
+			System.out.println("Finally block1 starts");
+			
+		}
+		
+	System.out.println("Program Ends");
+		
+		
+	}}
+
+
+/*If No Exception in try block , try block Executes and Finally block Executes
+if Exception in try block, catch block Executes and Finally block Executes
+if No Exception Handling is present then Super Exception is taken
+No Statements  are Allowed between try & catch Block
+No Statements  are Allowed between catch & finally Block
+Statements  are Allowed between 2 catch Blocks
+1 try block can have Multiple Catch Block
+if No Exception in catch Block is present Entire Program Stops Executing
+Child Exception Catch Block should be Written First 
+try block should be present to use finally block*/
+	

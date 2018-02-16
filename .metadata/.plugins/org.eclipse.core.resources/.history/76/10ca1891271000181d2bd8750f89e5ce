@@ -1,0 +1,15 @@
+package test_package;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class Get_Row_CountIn_Excel {
+	
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		System.out.println(System.getProperty("user.dir"));
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir"));
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package test_package;
+
+public class Exception_Handling_Class1 {
+	
+	int i;
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Program Starts");
+		
+	}
+	
+
+}
